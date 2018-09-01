@@ -1,2 +1,4 @@
-compile('org.flywaydb:flyway-core')
-compile("com.alibaba:druid-spring-boot-starter:1.1.10")
+dependencies {
+	compile('org.flywaydb:flyway-core')
+	compile("com.alibaba:druid-spring-boot-starter:1.1.10")
+}

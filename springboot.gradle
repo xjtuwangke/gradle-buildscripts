@@ -3,6 +3,13 @@ buildscript {
         kotlinVersion = '1.2.51'
         springBootVersion = '2.0.4.RELEASE'
     }
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenLocal()
+        mavenCentral()
+        maven { url 'https://repo.spring.io/plugins-release' }
+        maven { url 'https://static.rollong.cn/maven/public' }
+    }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
@@ -23,6 +30,16 @@ apply plugin: 'propdeps-eclipse'
 
 springBoot {
     buildInfo()
+}
+
+repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://repo.spring.io/release" }
+    maven { url 'https://repo.spring.io/plugins-release' }
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://static.rollong.cn/maven/public' }
 }
 
 dependencies {
