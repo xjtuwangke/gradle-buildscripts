@@ -1,0 +1,17 @@
+sourceCompatibility = 1.8
+
+sourceSets.main.java.srcDirs('src/main/kotlin')
+sourceSets.main.kotlin.srcDirs('src/main/kotlin')
+
+compileKotlin {
+    kotlinOptions {
+        freeCompilerArgs = ["-Xjsr305=strict"]
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        freeCompilerArgs = ["-Xjsr305=strict"]
+        jvmTarget = "1.8"
+    }
+}
