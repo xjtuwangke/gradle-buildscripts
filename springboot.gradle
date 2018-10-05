@@ -42,7 +42,12 @@ dependencies {
     //compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 
     runtime('org.springframework.boot:spring-boot-devtools')
+
     compileOnly('org.springframework.boot:spring-boot-configuration-processor')
+    annotationProcessor('org.springframework.boot:spring-boot-configuration-processor')
+    testCompileOnly('org.springframework.boot:spring-boot-configuration-processor')
+    testAnnotationProcessor('org.springframework.boot:spring-boot-configuration-processor')
+    
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
     //java9 支持
