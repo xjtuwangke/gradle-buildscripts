@@ -6,7 +6,7 @@ protobuf {
     }
     plugins {
         grpc {
-            artifact = 'io.grpc:protoc-gen-grpc-java:1.15.0'
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.15.1'
         }
     }
     generateProtoTasks {
@@ -19,8 +19,8 @@ protobuf {
 dependencies{
     compile('com.googlecode.protobuf-java-format:protobuf-java-format:1.4')
     compile('org.lognet:grpc-spring-boot-starter:2.4.1')
-    compile('io.grpc:grpc-stub:1.15.0')
-    compile('io.grpc:grpc-protobuf:1.15.0')
-    compile('io.grpc:grpc-netty:1.15.0')
-    compile('io.netty:netty-tcnative-boringssl-static:2.0.16.Final')
+    compile('io.grpc:grpc-stub:1.15.1')
+    compile('io.grpc:grpc-protobuf:1.15.1')
+    compile('io.grpc:grpc-netty:1.15.1')
+    compile('io.netty:netty-tcnative-boringssl-static:2.0.17.Final')
 }
