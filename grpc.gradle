@@ -18,7 +18,7 @@ protobuf {
 
 dependencies{
     compile('com.googlecode.protobuf-java-format:protobuf-java-format:1.4')
-    compile('org.lognet:grpc-spring-boot-starter:2.4.1')
+    compile('org.lognet:grpc-spring-boot-starter:2.4.3')
     compile('io.grpc:grpc-stub:1.16.0')
     compile('io.grpc:grpc-protobuf:1.16.0')
     compile('io.grpc:grpc-netty:1.16.0')
