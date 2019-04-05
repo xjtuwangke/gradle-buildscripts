@@ -1,4 +1,0 @@
-
-dependencies {
-	compile('com.github.javafaker:javafaker:0.17.2')
-}

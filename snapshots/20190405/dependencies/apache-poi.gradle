@@ -1,7 +1,0 @@
-dependencies {
-	compile('org.apache.poi:poi:3.17')
-	compile('org.apache.poi:poi-ooxml:3.17')
-	compile('org.apache.poi:poi-ooxml-schemas:3.17')
-	compile('org.apache.poi:poi-scratchpad:3.17')
-	compile('org.apache.poi:poi-excelant:3.17')
-}

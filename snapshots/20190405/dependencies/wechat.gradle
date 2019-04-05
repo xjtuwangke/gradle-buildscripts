@@ -1,4 +1,0 @@
-
-dependencies {
-	compile('com.github.liyiorg:weixin-popular:2.8.23')
-}
