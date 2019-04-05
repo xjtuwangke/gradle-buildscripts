@@ -51,5 +51,5 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
     //java9 支持
-    compile('javax.xml.bind:jaxb-api:2.3.0')
+    compile('javax.xml.bind:jaxb-api:2.3.1')
 }
