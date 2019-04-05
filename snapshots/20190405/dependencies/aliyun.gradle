@@ -1,0 +1,4 @@
+dependencies {
+	compile("com.aliyun.oss:aliyun-sdk-oss:3.4.2")
+	compile("com.aliyun:aliyun-java-sdk-core:4.4.0")
+}

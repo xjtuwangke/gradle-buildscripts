@@ -1,0 +1,26 @@
+apply plugin: 'com.google.protobuf'
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.7.1'
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.19.0'
+        }
+    }
+    generateProtoTasks {
+        all()*.plugins {
+            grpc {}
+        }
+    }
+}
+
+dependencies{
+    compile('com.googlecode.protobuf-java-format:protobuf-java-format:1.4')
+    compile('io.github.lognet:grpc-spring-boot-starter:3.2.1')
+    compile('io.grpc:grpc-stub:1.19.0')
+    compile('io.grpc:grpc-protobuf:1.19.0')
+    compile('io.grpc:grpc-netty:1.19.0')
+    compile('io.netty:netty-tcnative-boringssl-static:2.0.24.Final')
+}
