@@ -1,4 +1,5 @@
 
 dependencies {
-	compile('com.github.liyiorg:weixin-popular:2.8.23')
+	compile('com.alibaba:fastjson:1.2.58')
+	compile('com.github.liyiorg:weixin-popular:2.8.27')
 }
