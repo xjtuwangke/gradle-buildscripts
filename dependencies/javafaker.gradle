@@ -1,4 +1,4 @@
 
 dependencies {
-	compile('com.github.javafaker:javafaker:1.0.1')
+	implementation('com.github.javafaker:javafaker:1.0.1')
 }
